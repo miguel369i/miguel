@@ -73,7 +73,7 @@ export function Footer() {
         <a href="https://github.com/miguel369i/" target="_blank">
           <TextLoop className="text-xs text-zinc-500">
             <span>© {new Date().getFullYear()} miguel369i.</span>
-            <span>:)</span>
+            <span>Let's work together!</span>
           </TextLoop>
         </a>
         <div className="text-xs text-zinc-400">

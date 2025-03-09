@@ -35,13 +35,7 @@ export const PROJECTS: Project[] = [
     video: `https://ik.imagekit.io/5fi0iwob9/ecommerce.mp4?updatedAt=1740419323535`,
     id: 'project1',
   },
-  {
-    name: 'Custom Bag Design Platform',
-    description: 'Web app for designing customized paper bags. Generates production-ready art files and automates order management/WhatsApp communication. Built with Next.js, Tailwind CSS, PostgreSQL, and Fabric.js.',
-    link: 'https://mora-embalagens.vercel.app/',
-    video: 'https://ik.imagekit.io/5fi0iwob9/bags.mp4?updatedAt=1740419322535',
-    id: 'project2',
-  },
+
   {
     name: 'Crie tu site landing page',
     description: 'Software development site offering one-time payment solutions for custom websites, e-commerce, and systems, with responsive design, SEO, and payment integrations.',
@@ -131,3 +125,13 @@ export const TECH_STACK = [
 ]
 
 export const EMAIL = 'one.cannot446@simplelogin.fr'
+
+  {/*
+  {
+    name: 'Custom Bag Design Platform',
+    description: 'Web app for designing customized paper bags. Generates production-ready art files and automates order management/WhatsApp communication. Built with Next.js, Tailwind CSS, PostgreSQL, and Fabric.js.',
+    link: 'https://mora-embalagens.vercel.app/',
+    video: 'https://ik.imagekit.io/5fi0iwob9/bags.mp4?updatedAt=1740419322535',
+    id: 'project2',
+  },
+  */}

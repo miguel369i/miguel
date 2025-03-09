@@ -13,7 +13,7 @@ export const viewport: Viewport = {
 
 export const metadata: Metadata = {
   title: 'Miguel Muñoz - Fullstack Developer',
-  description: 'Portfolio of Miguel Muñoz, specializing in modern web development with Next.js and React.',
+  description: 'Portfolio of Miguel Muñoz, specializing Frontend.',
   robots: {
     index: false,
     follow: false,
