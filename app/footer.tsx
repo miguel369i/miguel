@@ -4,6 +4,7 @@ import { TextLoop } from '@/components/ui/text-loop'
 import { MonitorIcon, MoonIcon, SunIcon } from 'lucide-react'
 import { useTheme } from 'next-themes'
 import { useEffect, useState } from 'react'
+import { cloneElement } from 'react'
 
 const THEMES_OPTIONS = [
   {
@@ -37,7 +38,7 @@ function ThemeSwitch() {
 
   return (
     <AnimatedBackground
-      className="pointer-events-none rounded-lg bg-zinc-100 dark:bg-zinc-800"
+      className="rounded-lg bg-zinc-100 dark:bg-zinc-800 p-1.5"
       defaultValue={theme}
       transition={{
         type: 'spring',
@@ -49,19 +50,23 @@ function ThemeSwitch() {
         setTheme(id as string)
       }}
     >
-      {THEMES_OPTIONS.map((theme) => {
-        return (
-          <button
-            key={theme.id}
-            className="inline-flex h-7 w-7 items-center justify-center text-zinc-500 transition-colors duration-100 focus-visible:outline-2 data-[checked=true]:text-zinc-950 dark:text-zinc-400 dark:data-[checked=true]:text-zinc-50"
-            type="button"
-            aria-label={`Switch to ${theme.label} theme`}
-            data-id={theme.id}
-          >
-            {theme.icon}
-          </button>
-        )
-      })}
+      <div className="flex flex-row gap-2">
+        {THEMES_OPTIONS.map((theme) => {
+          return (
+            <button
+              key={theme.id}
+              className="inline-flex size-8 items-center justify-center rounded-md text-zinc-500 transition-colors duration-100 hover:bg-zinc-200/50 focus-visible:outline-2 data-[checked=true]:text-zinc-950 dark:text-zinc-400 dark:hover:bg-zinc-700/50 dark:data-[checked=true]:text-zinc-50 md:size-9"
+              type="button"
+              aria-label={`Switch to ${theme.label} theme`}
+              data-id={theme.id}
+            >
+              {cloneElement(theme.icon, {
+                className: "size-4 md:size-5"
+              })}
+            </button>
+          )
+        })}
+      </div>
     </AnimatedBackground>
   )
 }

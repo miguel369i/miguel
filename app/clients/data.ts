@@ -43,7 +43,7 @@ export const clientsData = [
     description: "I need an online eCommerce platform integrated with WhatsApp to sell my catalog of bags.",
     website: "https://sitemoraembalagens.vercel.app",
     project: {
-      overview: "The sale of eBooks online was integrated with Stripe, and the service was also designed as a tarot directory and a blog to optimize SEO.",
+      overview: "This online catalog was created without a direct payment integration, instead, it opens the purchase order directly to the company's sales WhatsApp for processing.",
       desktopImage: "/clients/mora/mora-example.png",
     },
     technologies: ["Next.js", "Tailwind CSS", "TypeScript", "Framermotion"]

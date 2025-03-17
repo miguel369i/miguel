@@ -1,9 +1,0 @@
-{
-    "owner": {
-        "username": "insert-github-username-here",
-        "email": "insert-email-here"
-    },
-    "record": {
-        "TXT": "vc-domain-verify=miguelangel.is-a.dev,f7bce262d030fb5671a0"
-    }
-}

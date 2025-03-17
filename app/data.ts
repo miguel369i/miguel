@@ -98,23 +98,32 @@ export const SOCIAL_LINKS: SocialLink[] = [
     link: 'https://github.com/poqwpms',
   },
   {
-    label: 'LinkedIn',
-    link: 'https://www.linkedin.com/in/miguelm369',
-  },
-  {
     label: 'Instagram',
-    link: 'https://www.instagram.com/crietusite',
-  },
+    link: 'https://www.instagram.com/miguel369i',
+  }
 ]
 
 export const TECH_STACK = [
-  { name: 'TypeScript', link: 'https://www.typescriptlang.org/' },
+  { name: 'SEO', link: 'https://developers.google.com/search/docs' },
   { name: 'React', link: 'https://react.dev/' },
   { name: 'Next.js', link: 'https://nextjs.org/' },
-  { name: 'Nginx', link: 'https://www.nginx.com/' },
-  { name: 'PHP', link: 'https://www.php.net/' },
-  { name: 'SQL', link: 'https://www.w3schools.com/sql/' },
+  { name: 'TypeScript', link: 'https://www.typescriptlang.org/' },
+  { name: 'Performance Optimization', link: 'https://web.dev/learn/' },
+  { name: 'Responsive UI/UX Design', link: 'https://www.nngroup.com/articles/responsive-web-design-definition/' },
+  { name: 'Payment Gateways', link: 'https://stripe.com/' },
+  { name: 'RESTful APIs', link: 'https://restfulapi.net/' },
   { name: 'PostgreSQL', link: 'https://www.postgresql.org/' },
+  { name: 'MariaDB', link: 'https://mariadb.org/' },
+  { name: 'MySQL', link: 'https://www.mysql.com/' },
+  { name: 'Nest.js', link: 'https://nestjs.com/' },
+  { name: 'PHP', link: 'https://www.php.net/' },
+  { name: 'PWA', link: 'https://web.dev/progressive-web-apps/' },
+  { name: 'Docker', link: 'https://www.docker.com/' },
+  { name: 'Git', link: 'https://git-scm.com/' },
+  { name: 'Jira', link: 'https://www.atlassian.com/software/jira' },
+  { name: 'NGINX', link: 'https://www.nginx.com/' },
+  { name: 'Apache', link: 'https://httpd.apache.org/' },
+  { name: 'DevOps', link: 'https://aws.amazon.com/devops/what-is-devops/' },
 ]
 
 export const EMAIL = 'one.cannot446@simplelogin.fr'

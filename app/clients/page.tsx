@@ -7,7 +7,7 @@ import { ArrowUpRight } from 'lucide-react';
 
 export default function Home() {
   return (
-    <main className="container mx-auto px-4 py-8 max-w-5xl">
+    <main className="container mx-auto px-2 py-8 max-w-7xl">
       {clientsData.map((client, index) => (
         <section key={client.name} className="mb-16 last:mb-0">
 
@@ -78,7 +78,7 @@ export default function Home() {
           </div>
 
           {/* Technology Badges */}
-          <div className="border-t pt-6">
+          <div className="border-b pb-6">
             <h3 className="text-sm font-medium text-muted-foreground mb-3">Technologies Used</h3>
             <TechBadges technologies={client.technologies} />
           </div>

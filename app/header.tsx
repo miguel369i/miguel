@@ -5,7 +5,7 @@ import { FaWhatsapp } from 'react-icons/fa'
 
 export function Header() {
   return (
-    <header className="mb-8 space-y-4">
+    <header className="-mb-8 space-y-4">
       <div className="flex items-center">
         <img
           src="/miguel.jpeg"
@@ -31,7 +31,7 @@ export function Header() {
       </div>
       
       <button
-        className="w-full md:w-auto px-6 py-2 rounded-lg border font-medium transition-colors duration-200 ease-in-out flex items-center gap-2"
+        className="px-6 py-2 rounded-lg border font-medium transition-colors duration-200 ease-in-out flex items-center gap-2 w-fit"
         style={{
           borderColor: '#25D366',
           color: '#25D366',
