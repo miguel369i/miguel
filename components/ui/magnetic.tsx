@@ -7,15 +7,18 @@ import {
   useSpring,
   type SpringOptions,
 } from 'motion/react'
+import { cn } from '@/lib/utils'
 
 const SPRING_CONFIG = { stiffness: 26.7, damping: 4.1, mass: 0.2 }
 
-export type MagneticProps = {
+export interface MagneticProps {
   children: React.ReactNode
   intensity?: number
   range?: number
   actionArea?: 'self' | 'parent' | 'global'
   springOptions?: SpringOptions
+  link?: string
+  className?: string
 }
 
 export function Magnetic({
@@ -24,6 +27,8 @@ export function Magnetic({
   range = 100,
   actionArea = 'self',
   springOptions = SPRING_CONFIG,
+  link,
+  className,
 }: MagneticProps) {
   const [isHovered, setIsHovered] = useState(false)
   const ref = useRef<HTMLDivElement>(null)
@@ -96,17 +101,24 @@ export function Magnetic({
     }
   }
 
-  return (
+  const content = (
     <motion.div
       ref={ref}
-      onMouseEnter={actionArea === 'self' ? handleMouseEnter : undefined}
-      onMouseLeave={actionArea === 'self' ? handleMouseLeave : undefined}
+      className={cn("flex items-center justify-center px-3 py-1 text-sm rounded-full", className)}
       style={{
         x: springX,
         y: springY,
       }}
+      onMouseEnter={() => actionArea === 'self' && setIsHovered(true)}
+      onMouseLeave={() => actionArea === 'self' && setIsHovered(false)}
     >
       {children}
     </motion.div>
   )
+
+  return link ? (
+    <a href={link} className="inline-block">
+      {content}
+    </a>
+  ) : content;
 }
