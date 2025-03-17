@@ -193,7 +193,7 @@ export default function Personal() {
         
           <p className="text-zinc-600 dark:text-zinc-400">
           
-          Specialized in creating efficient web applications that transform business operations. Ask for what you need.
+          Don't hold back, if you need advice on a project or idea and want to know if it's possible and how it can be done, you can count on me if I'm available.
           </p>
           <div className="flex flex-wrap items-center gap-3 mt-5">
           {TECH_STACK.map((tech) => (

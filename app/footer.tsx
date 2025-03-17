@@ -45,22 +45,23 @@ function ThemeSwitch() {
         bounce: 0,
         duration: 0.2,
       }}
-      enableHover={false}
+      enableHover={true}
       onValueChange={(id) => {
         setTheme(id as string)
       }}
     >
       <div className="flex flex-row gap-2">
-        {THEMES_OPTIONS.map((theme) => {
+        {THEMES_OPTIONS.map((themeOption) => {
           return (
             <button
-              key={theme.id}
+              key={themeOption.id}
               className="inline-flex size-8 items-center justify-center rounded-md text-zinc-500 transition-colors duration-100 hover:bg-zinc-200/50 focus-visible:outline-2 data-[checked=true]:text-zinc-950 dark:text-zinc-400 dark:hover:bg-zinc-700/50 dark:data-[checked=true]:text-zinc-50 md:size-9"
               type="button"
-              aria-label={`Switch to ${theme.label} theme`}
-              data-id={theme.id}
+              aria-label={`Switch to ${themeOption.label} theme`}
+              onClick={() => setTheme(themeOption.id)}
+              data-id={themeOption.id}
             >
-              {cloneElement(theme.icon, {
+              {cloneElement(themeOption.icon, {
                 className: "size-4 md:size-5"
               })}
             </button>

@@ -126,7 +126,7 @@ export const TECH_STACK = [
   { name: 'DevOps', link: 'https://aws.amazon.com/devops/what-is-devops/' },
 ]
 
-export const EMAIL = 'one.cannot446@simplelogin.fr'
+export const EMAIL = 'email@miguel.network'
 
   {/*
   {

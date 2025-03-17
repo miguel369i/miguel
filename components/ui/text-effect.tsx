@@ -124,9 +124,9 @@ const AnimationComponent: React.FC<{
       <motion.span
         aria-hidden="true"
         variants={variants}
-        className="inline-block whitespace-pre"
+        className={segment.trim() ? 'inline-block' : 'inline-block w-2'}
       >
-        {segment}
+        {segment.trim() || '\u00A0'}
       </motion.span>
     ) : (
       <motion.span className="inline-block whitespace-pre">
@@ -160,7 +160,7 @@ AnimationComponent.displayName = 'AnimationComponent'
 
 const splitText = (text: string, per: 'line' | 'word' | 'char') => {
   if (per === 'line') return text.split('\n')
-  return text.split(/(\s+)/).filter(segment => segment.trim() !== '')
+  return text.split(/(\s+)/)
 }
 
 const hasTransition = (
