@@ -38,12 +38,13 @@ export function TabsPortfolio() {
             </TabsTrigger>
             <TabsTrigger
               value="testing"
-              className="group relative h-12 w-12 rounded-full border-2 border-transparent p-0 transition-all hover:border-foreground/30 data-[state=active]:border-foreground data-[state=active]:bg-transparent"
+              disabled
+              className="group relative h-12 w-12 rounded-full border-2 border-transparent p-0 transition-all hover:border-foreground/30 data-[state=active]:border-foreground data-[state=active]:bg-transparent opacity-50 cursor-not-allowed"
             >
               <span className="sr-only">Testing</span>
               <TriangleAlert className="size-7" strokeWidth={1.5} />
               <span className="absolute left-0 top-1/2 -translate-x-[calc(100%+0.5rem)] -translate-y-1/2 text-sm font-medium opacity-0 transition-opacity duration-200 group-hover:opacity-100 group-data-[state=active]:opacity-100">
-                Testing
+                Testing (Coming Soon)
               </span>
             </TabsTrigger>
           </TabsList>
@@ -68,7 +69,8 @@ export function TabsPortfolio() {
             </TabsTrigger>
             <TabsTrigger
               value="testing"
-              className="h-10 w-10 rounded-full p-0 data-[state=active]:bg-accent"
+              disabled
+              className="h-10 w-10 rounded-full p-0 data-[state=active]:bg-accent opacity-50 cursor-not-allowed"
             >
               <TriangleAlert className="size-5" strokeWidth={1.5} />
             </TabsTrigger>

@@ -17,7 +17,7 @@ export default function Home() {
               <div className="relative w-24 h-24 rounded-full overflow-hidden shrink-0">
                 <Image
                   src={client.profileImage || '/images/placeholder-profile.png'}
-                  alt={`${client.name} profile picture`}
+                  alt={`${client.name} - ${client.role} profile photo`}
                   fill
                   className="object-cover"
                   sizes="96px"
@@ -47,7 +47,7 @@ export default function Home() {
               <div className="relative aspect-video w-full overflow-hidden rounded-lg border shadow-sm">
                 <Image
                   src={client.project.desktopImage}
-                  alt={`${client.name} project preview`}
+                  alt={`${client.name} project interface screenshot - ${client.project.overview.substring(0, 50)}...`}
                   fill
                   className="object-cover"
                   sizes="100vw"
