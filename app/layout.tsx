@@ -41,9 +41,9 @@ export const metadata: Metadata = {
     locale: 'en_US',
     url: WEBSITE_URL,
     title: 'Miguel Muñoz | Fullstack Developer',
-    description: 'Expert in React, Next.js, and modern web development technologies',
+    description: 'Websites, web design, and developmentfor businesses and individuals',
     images: [{
-      url: `${WEBSITE_URL}/og-image.jpg`,
+      url: `${WEBSITE_URL}/og-image.png`,
       width: 1200,
       height: 630,
       alt: 'Miguel Muñoz Portfolio',
