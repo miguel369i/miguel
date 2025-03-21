@@ -8,7 +8,7 @@ export function Header() {
     <header className="-mb-8 space-y-4">
       <div className="flex items-center">
         <img
-          src="/miguel.jpeg"
+          src="/miguel.jpg"
           alt="Miguel Muñoz profile"
           className="mr-4 h-12 w-12 rounded-lg object-cover"
           width={40}

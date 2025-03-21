@@ -95,11 +95,11 @@ export const BLOG_POSTS: BlogPost[] = [
 export const SOCIAL_LINKS: SocialLink[] = [
   {
     label: 'Github',
-    link: 'https://github.com/poqwpms',
+    link: 'https://github.com/miguel369i',
   },
   {
-    label: 'Instagram',
-    link: 'https://www.instagram.com/miguel369i',
+    label: 'LinkedIn',
+    link: 'https://www.linkedin.com/in/miguel369i/',
   }
 ]
 

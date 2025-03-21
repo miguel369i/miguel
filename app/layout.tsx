@@ -75,7 +75,7 @@ const jsonLd = {
   url: WEBSITE_URL,
   sameAs: [
     'https://github.com/miguel369i',
-    'https://www.instagram.com/miguel369i'
+    'https://www.linkedin.com/in/miguel369i/'
   ],
   knowsAbout: TECH_STACK.map(tech => tech.name)
 }
