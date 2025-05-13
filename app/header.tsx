@@ -29,29 +29,6 @@ export function Header() {
           </TextEffect>
         </div>
       </div>
-      
-      <button
-        className="px-6 py-2 rounded-lg border font-medium transition-colors duration-200 ease-in-out flex items-center gap-2 w-fit"
-        style={{
-          borderColor: '#25D366',
-          color: '#25D366',
-          backgroundColor: 'transparent'
-        }}
-        onClick={() => window.open('https://wa.me/5538992582682', '_blank')}
-        onMouseEnter={(e) => {
-          e.currentTarget.style.backgroundColor = '#dcf8c6';
-          e.currentTarget.style.color = '#128C7E';
-          e.currentTarget.style.borderWidth = '2px';
-        }}
-        onMouseLeave={(e) => {
-          e.currentTarget.style.backgroundColor = 'transparent';
-          e.currentTarget.style.color = '#25D366';
-          e.currentTarget.style.borderWidth = '1px';
-        }}
-      >
-        Contact me
-        <FaWhatsapp className="w-5 h-5 text-current" />
-      </button>
     </header>
   )
 }

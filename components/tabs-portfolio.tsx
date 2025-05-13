@@ -12,7 +12,8 @@ export function TabsPortfolio() {
 
   return (
     <>
-      {/* Desktop Version */}
+      {/* Desktop Version - Commented out */}
+      {/*
       <div className="fixed right-4 top-4 z-50 max-md:hidden">
         <Tabs defaultValue="profile" onValueChange={handleTabChange}>
           <TabsList className="flex h-auto flex-col items-end gap-4 rounded-lg bg-transparent p-3 opacity-20 transition-opacity duration-300 hover:opacity-100 group-hover:opacity-100">
@@ -50,8 +51,10 @@ export function TabsPortfolio() {
           </TabsList>
         </Tabs>
       </div>
+      */}
 
-      {/* Mobile Bottom Navigation */}
+      {/* Mobile Bottom Navigation - Commented out */}
+      {/*
       <div className="fixed bottom-0 left-0 z-50 w-full md:hidden">
         <Tabs defaultValue="profile" onValueChange={handleTabChange}>
           <TabsList className="flex h-16 flex-row items-center justify-around rounded-t-lg bg-background/95 px-4 backdrop-blur supports-[backdrop-filter]:bg-background/60">
@@ -77,6 +80,7 @@ export function TabsPortfolio() {
           </TabsList>
         </Tabs>
       </div>
+      */}
     </>
   )
 } 

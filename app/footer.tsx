@@ -78,7 +78,7 @@ export function Footer() {
       <div className="flex items-center justify-between">
         <a href="https://github.com/miguel369i/" target="_blank">
           <TextLoop className="text-xs text-zinc-500">
-            <span>© {new Date().getFullYear()} miguel369i.</span>
+            <span>© {new Date().getFullYear()} miguel.network.</span>
             <span>Let's work together!</span>
           </TextLoop>
         </a>

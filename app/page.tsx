@@ -17,7 +17,7 @@ import {
   WORK_EXPERIENCE,
   //BLOG_POSTS,
   EMAIL,
-  SOCIAL_LINKS,
+  //SOCIAL_LINKS,
   TECH_STACK,
 } from './data'
 
@@ -321,6 +321,7 @@ export default function Personal() {
             {EMAIL}
           </a>
         </p>
+        {/* Social links section removed
         <div className="flex items-center justify-start space-x-3">
           {SOCIAL_LINKS.map((link) => (
             <MagneticSocialLink key={link.label} link={link.link}>
@@ -328,6 +329,7 @@ export default function Personal() {
             </MagneticSocialLink>
           ))}
         </div>
+        */}
       </motion.section>
     </motion.main>
   )

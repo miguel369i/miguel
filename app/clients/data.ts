@@ -1,4 +1,6 @@
 export const clientsData = [
+  // Pacciani - commented out for now
+  /*
   {
     name: "Pacciani",
     role: "Motorcycle accessories and manufacturing.",
@@ -12,6 +14,7 @@ export const clientsData = [
     },
     technologies: ["Next.js", "Tailwind CSS", "TypeScript", "shadcn/ui"]
   },
+  */
   {
     name: "Crie tu site",
     role: "Website development and design.",
@@ -24,6 +27,8 @@ export const clientsData = [
     },
     technologies: ["Next.js", "Tailwind CSS", "TypeScript", "MagicUI", "Framermotion"]
   },  
+  // Tremunda - commented out for now
+  /*
   {
     name: "Tremunda",
     role: "Tarot services and eBook sales.",
@@ -36,6 +41,7 @@ export const clientsData = [
     },
     technologies: ["Next.js", "Tailwind CSS", "TypeScript", "Stripe"]
   },  
+  */
   {
     name: "Mora Embalagens",
     role: "Bag manufacturing company.",
